@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Header () {
   return (
-        <header className="w-full py-3 flex justify-center bg-white shadow mb-10">
+        <header className="w-full py-3 flex justify-center bg-white shadow mb-6">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-20 w-screen max-w-screen-lg">
             <Link to="/">
                 <img

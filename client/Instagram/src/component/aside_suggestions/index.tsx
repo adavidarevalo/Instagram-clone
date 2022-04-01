@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
-import Profile from './profile';
+import { Link } from 'react-router-dom'
+import Profile from './profile'
 
-export default function AsideSuggestions() {
-    return (
+export default function AsideSuggestions () {
+  return (
         <>
             <Profile imageSize={14} />
             <div className="mb-3 flex justify-between">
@@ -16,5 +16,5 @@ export default function AsideSuggestions() {
             <Profile imageSize={10} />
             <Profile imageSize={10} />
         </>
-    );
+  )
 }

@@ -1,11 +1,11 @@
-import Histories from '../component/histories'
+import Stories from '../component/stories'
 import AsideBar from '../component/layout/aside/index'
 import AsideSuggestions from '../component/aside_suggestions'
 export default function Home () {
   return (
         <AsideBar asideComponent={<AsideSuggestions/>}>
         <div>
-            <Histories/>
+            <Stories/>
             <p>Home</p>
         </div>
         </AsideBar>
