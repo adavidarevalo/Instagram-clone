@@ -1,8 +1,15 @@
-import Routes from './routes';
+import AuthContext from './context/auth'
+import UserDataContext from './context/userData'
+import RouteAdministrator from './routes'
 
-
-function App() {
-    return <Routes/>
+function App () {
+  return (
+    <AuthContext>
+      <UserDataContext>
+        <RouteAdministrator />
+      </UserDataContext>
+    </AuthContext>
+  )
 }
 
-export default App;
+export default App

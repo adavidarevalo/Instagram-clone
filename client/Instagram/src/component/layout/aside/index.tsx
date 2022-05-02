@@ -1,10 +1,15 @@
-import React from 'react'
+import { ReactChildren, ReactChild } from 'react'
 
-export default function AsideBar ({ children, asideComponent }: any) {
+interface IProps {
+  children: ReactChild | ReactChildren;
+  asideComponent: JSX.Element
+}
+
+export default function AsideBar ({ children, asideComponent }: IProps) {
   return (
-        <div className="grid grid-cols-1 sm:grid-cols-4 grid-flow-col gap-6 w-full max-w-screen-lg">
+        <aside className="grid grid-cols-1 sm:grid-cols-4 grid-flow-col gap-6 w-full max-w-4xl">
             <div className="col-span-3">{children}</div>
             <div className="hidden sm:block col-span-1 col-end-5">{asideComponent}</div>
-        </div>
+        </aside>
   )
 }
